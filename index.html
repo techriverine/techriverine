@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechRiverine</title>
+    <link rel="icon" type="image/x-icon" href="/img/prof.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="overlay" class="overlay"></div>
+    
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Footer Inside Navigation -->
+        <div class="side-nav-footer">
+            <p> © 2024 <a href="./" target="_blank" class="footer-link">TechRiverine</a> <br>All rights reserved</p>
+        </div>
+    </nav>
+
+    <main>
+        <div id="welcomePopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <h2>Welcome!</h2>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="profile-card">
+                <img src="./img/prof.png" alt="Profile Image" class="profile-image">
+                <h1 class="name">TechRiverine</h1>
+                <p class="title">Web Development | Software Development</p>
+                <div class="contact-icons">
+                    <a href="#" class="icon email" title="Copy Email" onclick="copyEmail(event)">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/email-sign.png" alt="Email Icon">
+                    </a>                
+                    <a href="#" class="icon website" title="Website" onclick="showUnderConstruction(event)">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/internet.png" alt="Website Icon">
+                    </a>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#" class="instagram">Instagram</a></li>
+                    <li><a href="#" class="facebook">Facebook</a></li>
+                    <li><a href="#" class="youtube">YouTube</a></li>
+                    <li><a href="#" class="whatsapp">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
